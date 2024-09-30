@@ -1,38 +1,69 @@
-.App {
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  text-align: center; /* Centraliza o texto do título */
+  margin-top: 20px; /* Espaço acima do título */
+  margin-bottom: 10px; /* Espaço abaixo do título */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilo para o contêiner da box de definição de serviços */
+.service-form-container {
+  max-width: 600px; /* Define a largura máxima da box */
+  margin: 0 auto; /* Centraliza a box horizontalmente */
+  padding: 20px; /* Adiciona um espaço interno */
+  border: 1px solid darkgreen; /* Borda ao redor da box */
+  border-radius: 8px; /* Cantos arredondados */
+  background: lightyellow; /* Fundo da box */
+  margin-top: 20px; /* Espaço acima da box */
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilo para o título da box */
+.service-form-container h2 {
+  text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para o contêiner de cada linha de serviço */
+.service-line {
+  margin-bottom: 20px; /* Espaço entre cada linha de serviço */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Alinha verticalmente os itens dentro da linha */
 }
 
-.App-link {
-  color: #61dafb;
+/* Espaço entre o nome do serviço e o contêiner de seleção */
+.service-line label {
+  margin-bottom: 10px; /* Espaço abaixo do nome do serviço */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilo para o contêiner das caixas de seleção */
+.service-selection-container {
+  display: flex;
+  align-items: center; /* Alinha verticalmente as caixas de seleção com o texto */
+  gap: 10px; /* Espaço entre as caixas de seleção */
+}
+
+/* Estilo para as caixas de seleção */
+.service-selection-container input[type="radio"] {
+  margin-right: 5px; /* Espaço entre a caixa de seleção e o texto */
+}
+
+/* Estilo para o botão de salvar */
+.service-form-container button {
+  margin-top: 10px; /* Espaço acima do botão */
+  padding: 10px 20px; /* Espaço interno do botão */
+  border: none; /* Remove a borda padrão do botão */
+  background: darkgreen; /* Fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border-radius: 4px; /* Bordas arredondadas do botão */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+.service-form-container button:hover {
+  background: green; /* Cor de fundo do botão quando o cursor está sobre ele */
 }

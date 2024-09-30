@@ -1,0 +1,29 @@
+/* src/components/SecondPageTable.css */
+.blue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .blue-table th {
+    background-color: lightblue;
+    border-bottom: 3px solid blue;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .blue-table td {
+    background-color: papayawhip;
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .blue-table td:first-child {
+    font-weight: bold;
+  }
+  
+  .budget-structure-container {
+    margin-top: 20px;
+  }
+  

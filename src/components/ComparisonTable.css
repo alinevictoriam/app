@@ -1,0 +1,56 @@
+/* ComparisonTable.css */
+
+/* Estilo para a tabela */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para os cabeçalhos */
+.comparison-table th {
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    border-bottom: 3px solid blue;
+    text-align: left;
+}
+
+/* Estilo para as células da tabela */
+.comparison-table td {
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: papayawhip;
+    color: black;
+    text-align: left;
+}
+
+/* Alterna as cores das linhas */
+.comparison-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para as células numéricas */
+.comparison-table td.number {
+    text-align: right;
+}
+
+/* Estilo adicional para cabeçalhos específicos */
+.comparison-table th.total {
+    background-color: lightgreen;
+    border-bottom: 3px solid darkgreen;
+}
+
+/* Estilo para a última linha (geralmente resumo ou total) */
+.comparison-table tr:last-child td {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+/* Estilo para células de desvio */
+.comparison-table td.deviation {
+    font-weight: bold;
+    color: red;
+}

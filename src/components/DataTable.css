@@ -1,0 +1,26 @@
+/* Estilos específicos para a tabela verde */
+.green-table .table-header {
+    border-bottom-color: darkgreen;
+    background: lightgreen;
+    font-size: 0.76em; /* Diminui o tamanho da fonte do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .green-table .table-cell {
+    border-color: darkgreen;
+    background: lightyellow;
+    text-align: center;
+  }
+  
+  /* Adiciona linhas para separar as colunas */
+  table {
+      border-collapse: collapse; /* Garante que as bordas das células sejam colapsadas */
+    }
+    
+    .table-cell {
+      border-right: solid 1px darkgreen; /* Adiciona uma borda à direita das células para separar colunas */
+    }
+    
+    .table-cell:last-child {
+      border-right: none; /* Remove a borda à direita da última célula para não ter uma borda extra no final */
+    }
